@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import defaultImage from "../assets/errorImage.png";
 // import { useParams } from "react-router-dom";
 
 interface PokemonInfo {
@@ -55,7 +56,7 @@ const PokemonDetails: React.FC<PokemonDetailsProps> = ({id}) => {
   if (!pokemon) {
     return <h2 className="text-center">Pokemon not found!</h2>;
   }
-const image = pokemon.sprites.other?.home?.front_default || "/public/errorImage.png";
+const image = pokemon.sprites.other?.home?.front_default || defaultImage;
   return (
     <div className="p-4">
       <div className="bg-purple-100 rounded-lg shadow-md p-4 opacity-70 border-black border-2">

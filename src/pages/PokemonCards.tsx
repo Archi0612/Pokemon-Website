@@ -98,10 +98,10 @@ const PokemonCards: React.FC = () => {
 
   return (
     
-      <div className="bg-[url(/public/pikachu.png)] p-[2rem] pt-[1rem] bg-cover">
+      <div className="bg-[url(/src/assets/pikachu.png)] p-[2rem] pt-[1rem] bg-cover">
 
         <div className="flex justify-center">
-        <img src="/public/title.png" 
+        <img src="/src/assets/title.png" 
         alt="Pokemon" 
         className="flex w-[20rem] rounded-lg shadow-xl shadow-blue-300"/>
         </div>

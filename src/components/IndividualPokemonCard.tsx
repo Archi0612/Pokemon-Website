@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { FaInfoCircle } from "react-icons/fa";
+import defaultImage from "../assets/errorImage.png";
 
 interface PokemonCardProps {
   name: string;
@@ -13,7 +14,7 @@ const IndividualPokemonCard: React.FC<PokemonCardProps> = ({
   image,
   onIconClick,
 }) => {
-  const myImage = image || "/public/errorImage.png";
+  const myImage = image || defaultImage ;
 
   return (
     <Card
